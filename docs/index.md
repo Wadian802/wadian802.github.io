@@ -15,4 +15,4 @@ Make   | Model
 Nissan | Skyline GTR
 Mitzubishi | Evolution VIII MR
 
-### This might be a sub hetting
+### This might be a sub heading
