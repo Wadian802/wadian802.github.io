@@ -1,11 +1,11 @@
 ---
-title: Welcome to the Show
+title: A Piece of the Pi
 tags:
 - tag1
 - tag2
 ---
 
-## Sometimes, when you try to make things easier, you end of making them even harder. 
+## Energy is anywhere you can find it. Sometimes it takes a little following water and a few good pieces of electronics. 
 
 
 
