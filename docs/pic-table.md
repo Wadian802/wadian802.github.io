@@ -1,5 +1,5 @@
 ---
-title: PIC Table
+title: PIC Chip Table
 ---
 
 | ESP Info                                      | Answer |                                                                                                      
