@@ -21,7 +21,7 @@ PIC18F47Q10 Chip Informatoin
 
 | Module | # Available | Needed | Associated Pins (or * for any) |
 | ---------- | ----------- | ------ | ------------------------------ |
-| GPIO       | 26          | 0      | *                              |
+| GPIO       | 26          | 1      | 20                              |
 | ADC        | 16           | 0      | 2-16                              |
 | UART       | 1           | 0      |  11-18 & 21-28                          |
 | SPI        | 2          | 1      | 11-18 & 21-28                               |
