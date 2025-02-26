@@ -1,11 +1,10 @@
 ---
-title: A Piece of the Pi
-tags:
-- tag1
-- tag2
+The Homepage of Frank Wade
 ---
 
-## Energy is anywhere you can find it. Sometimes it takes a little following water and a few good pieces of electronics. 
+
+##  Back to the Team Page 
+  [Team202](https://egr314-2025-s-202.github.io/team202.github.io/) 🚀
 
 
 
