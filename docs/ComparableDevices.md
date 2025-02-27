@@ -13,8 +13,8 @@ Selection of parts
 
 
 # Selected Components
-## Choice MIKROE-1530
-This stepper motor will be able to oporate at 5V and provide a adequate amount of torque to move a valve. IT has a small step angle allowing for greater adjustments. The size compact size makes it perfect to fit in a smaller area and can be mounted by means rather than make use of a part specific bracket. 
+## Choice 26M048B1B
+This bipolar stepper motor will be able to oporate at 5V and provide adequate amount of torque to move a gate. It has a small step angle allowing for greater adjustments. The size compact size makes it perfect to fit in a smaller area and can be mounted by means rather than make use of a part specific bracket. 
 ## Choice IFX9201SGAUMA1
 This full half bridge will interface in SPI and it will work with the selected chip. It can be configured to work with 5.0V, the same power required to run the stepper motoer. This enables both the stepper driver and stepper motor to run off the same voltage avoiding the need to step down power between both motor and driver.
   
