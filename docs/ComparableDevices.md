@@ -16,10 +16,11 @@ Selection of parts
 
 |Microcontorller Part                                      | Pros| Cons  |  Data Sheet    |                                                                                           
 | --------------------------------------------- | ------ | ------------------------------------------------------------------------ |-------|
+| ![PIC18F47Q10](./PIC18f47Q10.png)  | <ul><li> Familiar with chip, used in class </li><li> Many GPIO pins for addtional components </li><li>   | <ul><li> Not as compact as similar chips </li><li>  |   [PIC18F47Q10](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf). | 
 
 |Voltage Regulator  Part                                      | Pros| Cons  |  Data Sheet    |                                                                                           
 | --------------------------------------------- | ------ | ------------------------------------------------------------------------ |-------|
-
+| ![LM2575D2T-3.3G](./LM2575T.png)  | <ul><li> Very familiar with usage </li><li> will step down the voltage from 9V to 3.3V </li><li>   | <ul> surface mounted <li>  |   [LM2575T](https://www.digikey.com/en/products/detail/onsemi/LM2575T-3-3G/1476700). | 
 
 # Selected Components
 ## Choice 26M048B1B
