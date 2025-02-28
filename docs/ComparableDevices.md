@@ -15,7 +15,7 @@ Selection of parts
 | ![MIKROE-1530](./stepmoto3.jpg)  | <ul><li>Operates at 5V </li><li> 5.625 degree step </li><li>   | <ul><li> Needs to use 3 wires to work </li><li> 10mm shaft </li><li> Might need a clip to work  |   [MIKROE-1530](https://download.mikroe.com/documents/datasheets/step-motor-5v-28byj48-datasheet.pdf). | 
 
 |Microcontorller Part                                      | Pros| Cons  |  Data Sheet    |                                                                                           
-| --------------------------------------------- | ------ | ------------------------------------------------------------------------ |-------|
+| --------------------------------------------- | ------ | ------------------------------------------------------------------------|-------|
 | ![PIC18F47Q10](./PIC18f47Q10.png)  | <ul><li> Familiar with chip, used in class </li><li> Many GPIO pins for addtional components </li><li>   | <ul><li> Not as compact as similar chips </li> |   [PIC18F47Q10](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf). | 
 
 |Voltage Regulator  Part                                      | Pros| Cons  |  Data Sheet    |                                                                                           
@@ -23,10 +23,14 @@ Selection of parts
 | ![LM2575D2T-3.3G](./LM2575D2T.png)  | <ul><li> Very familiar with usage </li><li> will step down the voltage from 9V to 3.3V </li><li>   | <ul><li>  surface mounted  |   [LM2575T](https://www.digikey.com/en/products/detail/onsemi/LM2575T-3-3G/1476700). | 
 
 # Selected Components
-## Choice 26M048B1B
-This bipolar stepper motor will be able to oporate at 5V and provide adequate amount of torque to move a gate. It has a small step angle allowing for greater adjustments. The size compact size makes it perfect to fit in a smaller area and can be mounted by means rather than make use of a part specific bracket. 
-## Choice IFX9201SGAUMA1
-This full half bridge will interface in SPI and it will work with the selected chip. It can be configured to work with 5.0V, the same power required to run the stepper motoer. This enables both the stepper driver and stepper motor to run off the same voltage avoiding the need to step down power between both motor and driver.
-  
+##  26M048B1B Step Motor
+This bipolar step motor will be able to oporate at 5V and provide adequate amount of torque to move a gate. It has a small step angle of 7.5 degrees allowing for greater adjustments. From mounting hole to mounting hole, its only 1.374 inches with an overall diamerter of 1.030 inches. It is small yet functional and adequate for the project needs. 
 
+##  IFX9201SGAUMA1 Motor driver
+This full half bridge will interface in SPI and it will work with the selected chip. This chip model will output at 3.3 volts working with the step motor. Because the step motor is bipolar, it will need two drivers. One driver will control the motion of the step motor in one direction, the other chip will control the motion of the step motor in the other direction. 
 
+##  PIC18F47Q10 Microcontroller
+The Microchip microcontrol is part of the PIC18 family. This particular chip hosts 40 pins, 2 being VDD and VSS, 1 for MCLR and for GPIO. It possesses the ability to work either SPI or I2C for connecting with different peripherals. As the microcontroller used in class, the familiarity of it makes it ideal the project. 
+
+## LM275D2T Voltage regulator
+This voltage regular is a surface mounted regulater that will step down a 9V coming to an easier 3.3V. This particular part has been utilized before so the familiarity with its use, also makes it a great choice to use for this particular project. 
