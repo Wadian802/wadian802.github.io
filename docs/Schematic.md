@@ -6,4 +6,4 @@ This is the schematic of the motor driver, IFX9201SG, and the stepper motor,MIKR
 > ![Schematic](./motoDriver2.3.jpg) 
 
 *  [Schematic PDF](./motoDriver2.3.pdf)
-*  [Schematic Folder](./StepMotor-Driver1-1.zip)
+*  [Schematic Folder](./StepMotor-Driver1-2.zip)
