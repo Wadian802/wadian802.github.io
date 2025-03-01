@@ -34,3 +34,15 @@ The Microchip microcontrol is part of the PIC18 family. This particular chip hos
 
 ## LM275D2T Voltage regulator
 This voltage regular is a surface mounted regulater that will step down a 9V coming to an easier 3.3V. This particular part has been utilized before so the familiarity with its use, also makes it a great choice to use for this particular project. 
+
+
+
+### Power Budget ###
+------
+Power is requried to run major components for the stepper driver and motor. One would need to know how much power is being used and how much still available.  The power budget focuses on both the supply voltage range and the maximum amont of current each component would take. This, with then given a 25% safety margin, allows for little more room to determine the most amount of amperage being drawn by the device. From this, one can determine how much is needed and how much can sent to others through the the communication chain. 
+
+
+![Power Budget](./PB1.jpg)
+![Power Budget](./PB2.jpg)
+
+[Power Budget](./PowerBudget.pdf)
