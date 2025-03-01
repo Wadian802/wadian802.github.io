@@ -12,7 +12,7 @@
       
       
       
-        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/ComparableDevices/">
+        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/Component%20Selection/">
       
       
         <link rel="prev" href="../Block-Diagram/">
@@ -29,7 +29,7 @@
 
     
       
-        <title>ComparableDevices - EGR314 Report Template</title>
+        <title>Component Selection - EGR314 Report Template</title>
       
     
     
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ComparableDevices
+              Component Selection
             
           </span>
         </div>
@@ -243,7 +243,7 @@
   
     
   
-  ComparableDevices
+  Component Selection
 
       </a>
     </li>
@@ -443,7 +443,7 @@
           
   
   <span class="md-ellipsis">
-    ComparableDevices
+    Component Selection
   </span>
   
 
@@ -454,7 +454,7 @@
         
   
   <span class="md-ellipsis">
-    ComparableDevices
+    Component Selection
   </span>
   
 
@@ -513,6 +513,19 @@
   <a href="#lm275d2t-voltage-regulator" class="md-nav__link">
     LM275D2T Voltage regulator
   </a>
+  
+    <nav class="md-nav" aria-label="LM275D2T Voltage regulator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-budget" class="md-nav__link">
+    Power Budget
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -713,6 +726,19 @@
     LM275D2T Voltage regulator
   </a>
   
+    <nav class="md-nav" aria-label="LM275D2T Voltage regulator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-budget" class="md-nav__link">
+    Power Budget
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -735,7 +761,7 @@
                   
 
   
-    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/ComparableDevices.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/Component Selection.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -850,6 +876,12 @@
 <p>The Microchip microcontrol is part of the PIC18 family. This particular chip hosts 40 pins, 2 being VDD and VSS, 1 for MCLR and for GPIO. It possesses the ability to work either SPI or I2C for connecting with different peripherals. As the microcontroller used in class, the familiarity of it makes it ideal the project. </p>
 <h2 id="lm275d2t-voltage-regulator">LM275D2T Voltage regulator</h2>
 <p>This voltage regular is a surface mounted regulater that will step down a 9V coming to an easier 3.3V. This particular part has been utilized before so the familiarity with its use, also makes it a great choice to use for this particular project. </p>
+<h3 id="power-budget">Power Budget</h3>
+<hr />
+<p>Power is requried to run major components for the stepper driver and motor. One would need to know how much power is being used and how much still available.  The power budget focuses on both the supply voltage range and the maximum amont of current each component would take. This, with then given a 25% safety margin, allows for little more room to determine the most amount of amperage being drawn by the device. From this, one can determine how much is needed and how much can sent to others through the the communication chain. </p>
+<p><a class="glightbox" href="../PB1.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Power Budget" src="../PB1.jpg" /></a>
+<a class="glightbox" href="../PB2.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Power Budget" src="../PB2.jpg" /></a></p>
+<p><a href="../PowerBudget.pdf">Power Budget</a></p>
 
 
 
