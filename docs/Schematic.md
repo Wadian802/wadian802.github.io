@@ -4,7 +4,7 @@ This is the schematic for components to run the stepper motor and control the ga
 
  
 
-> ![Schematic](./motoDriver2.3.jpg) 
+> ![Schematic](./motoDriver2.4.pdf) 
 
-*  [Schematic PDF](./motoDriver2.3.pdf)
+*  [Schematic PDF](./motoDriver2.4.pdf)
 *  [Schematic Folder](./StepMotor-Driver1-2.zip)
