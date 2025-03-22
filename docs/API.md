@@ -2,11 +2,12 @@
 Application Programming Interface or API  Messaging
 ---
 The software between the motor, hall effect sensor, wifi and OLED screen all need to communicate to perform a function and communicate that function to a user. 
-THe interfacing between these components means that each part can speak to another part. 
+The interfacing between these components means that each part can speak to another part. 
 
 Provided is a sample of messages the stepper motor will send or receive between other sensors. 
 
 Message Structure:
+
 | Message Type <br /> byte 1-2 <br /> (char)         | Description |
 | --------------------------------------------- | ----------- |
 |1                                              | Set motor X direction |
@@ -18,6 +19,7 @@ Message Structure:
 
 
 Message Type 1:
+
 |-----------    | Byte 5-6      | Byte 7        |   Byte 8 |
 |------------   | --------------| ------------- | ------------- |
 | Variable Name | message_type  | motor_id      | motor_direction |
@@ -28,6 +30,7 @@ Message Type 1:
 
 
 Message Type 2:
+
 |-----------    | Byte 5-6     | Byte 7        | Byte 8 |
 |------------   | -------------| ------------- | ------------- |
 | Variable Name | message_type | sensor_id     | sensor_value |
@@ -38,6 +41,7 @@ Message Type 2:
 
 
 Message Type 3:
+
 |------------| Byte 5 - Byte 6 | Byte 7 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | subsystem_id |
@@ -48,6 +52,7 @@ Message Type 3:
 
 
 Message Type 4:
+
 |----------  | Byte 5 - Byte 6 | Byte 7 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | motor_status |
@@ -58,6 +63,7 @@ Message Type 4:
 
 
 Message Type 5:
+
 |------------| Byte 5 - Byte 6 | Byte 7 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | motor_speed |
