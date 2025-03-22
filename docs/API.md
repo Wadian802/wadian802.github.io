@@ -16,23 +16,23 @@ Message Structure
 
 
 Message Type 1:
-|----------- | Byte 5-6 | Byte 7 | Byte 8 |
-|------------| --------------| ------------- | ------------- |
-| Variable Name | message_type | motor_id | motor_direction |
-|Variable Type | char | char | int8_t |
-| Min Value| 1 | 1 | -1 |
-| Max Value| 8 | 3 | 1 |
-| Example | 1 | 2 | -1 |
+|-----------    | Byte 5-6      | Byte 7        |   Byte 8 |
+|------------   | --------------| ------------- | ------------- |
+| Variable Name | message_type  | motor_id      | motor_direction |
+|Variable Type  | char          | char          | int8_t |
+| Min Value     | 1             | 1             | -1 |
+| Max Value     | 8             | 3             | 1 |
+| Example       | 1             | 2             | -1 |
 
 
 Message Type 2:
-|----------- | Byte 5-6 | Byte 7 | Byte 8 |
-|------------| --------------| ------------- | ------------- |
-| Variable Name | message_type | sensor_id | sensor_value |
-|Variable Type | char | char | char |
-| Min Value| 1 | 1 | 0 |
-| Max Value| 8 | 2 | 100 |
-| Example | 3 | 2 | 23 |
+|-----------    | Byte 5-6     | Byte 7        | Byte 8 |
+|------------   | -------------| ------------- | ------------- |
+| Variable Name | message_type | sensor_id     | sensor_value |
+| Variable Type | char         | char          | char |
+| Min Value     | 1            | 1             | 0 |
+| Max Value     | 8            | 2             |  100 |
+| Example       | 3            | 2             | 23 |
 
 
 Message Type 3:
