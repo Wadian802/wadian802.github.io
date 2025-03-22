@@ -6,7 +6,7 @@ The interfacing between these components means that each part can speak to anoth
 
 Provided is a sample of messages the stepper motor will send or receive between other sensors. 
 
-Message Structure:
+Message Structure:  
 
 | Message Type <br /> byte 1-2 <br /> (char)         | Description |
 | --------------------------------------------- | ----------- |
@@ -18,7 +18,7 @@ Message Structure:
 
 
 
-Message Type 1:
+Message Type 1:  
 
 |-----------    | Byte 5-6      | Byte 7        |   Byte 8 |
 |------------   | --------------| ------------- | ------------- |
@@ -29,7 +29,7 @@ Message Type 1:
 | Example       | 1             | 2             | -1 |
 
 
-Message Type 2:
+Message Type 2:  
 
 |-----------    | Byte 5-6     | Byte 7        | Byte 8 |
 |------------   | -------------| ------------- | ------------- |
@@ -40,7 +40,7 @@ Message Type 2:
 | Example       | 3            | 2             | 23 |
 
 
-Message Type 3:
+Message Type 3:  
 
 |------------| Byte 5 - Byte 6 | Byte 7 |
 |------------| --------------| ------------- |
@@ -51,7 +51,7 @@ Message Type 3:
 | Example | 5 | c |
 
 
-Message Type 4:
+Message Type 4:  
 
 |----------  | Byte 5 - Byte 6 | Byte 7 |
 |------------| --------------| ------------- |
@@ -62,7 +62,7 @@ Message Type 4:
 | Example | 4 | 0 |
 
 
-Message Type 5:
+Message Type 5:  
 
 |------------| Byte 5 - Byte 6 | Byte 7 |
 |------------| --------------| ------------- |
