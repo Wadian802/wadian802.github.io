@@ -29,7 +29,7 @@
 
     
       
-        <title>Application Programming Interface or API - EGR314 Report Template</title>
+        <title>API - EGR314 Report Template</title>
       
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#application-programming-interface-or-api" class="md-skip">
+        <a href="#application-programming-interface-or-api-messaging" class="md-skip">
           Skip to content
         </a>
       
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Application Programming Interface or API
+              API
             
           </span>
         </div>
@@ -226,7 +226,7 @@
   
     
   
-  Application Programming Interface or API
+  API
 
       </a>
     </li>
@@ -436,18 +436,51 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    API
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Application Programming Interface or API
+    API
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#application-programming-interface-or-api-messaging" class="md-nav__link">
+    Application Programming Interface or API  Messaging
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -627,8 +660,21 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#application-programming-interface-or-api-messaging" class="md-nav__link">
+    Application Programming Interface or API  Messaging
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -651,12 +697,15 @@
   
 
 
-<h1 id="application-programming-interface-or-api">Application Programming Interface or API</h1>
+  <h1>API</h1>
+
+<hr />
+<h2 id="application-programming-interface-or-api-messaging">Application Programming Interface or API  Messaging</h2>
 <p>The software between the motor, hall effect sensor, wifi and OLED screen all need to communicate to perform a function and communicate that function to a user. 
 THe interfacing between these components means that each part can speak to another part. </p>
 <p>Provided is a sample of messages the stepper motor will send or receive between other sensors. </p>
-<p>Message Structure
-| Message Type <br /> byte 1-2 <br /> (char)    | Description |
+<p>Message Structure:
+| Message Type <br /> byte 1-2 <br /> (char)         | Description |
 | --------------------------------------------- | ----------- |
 |1                                              | Set motor X direction |
 |2                                              | Print sensor X value Y |
