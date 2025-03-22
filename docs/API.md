@@ -1,11 +1,13 @@
-# Application Programming Interface or API  
+---
+Application Programming Interface or API  Messaging
+---
 The software between the motor, hall effect sensor, wifi and OLED screen all need to communicate to perform a function and communicate that function to a user. 
 THe interfacing between these components means that each part can speak to another part. 
 
 Provided is a sample of messages the stepper motor will send or receive between other sensors. 
 
-Message Structure
-| Message Type <br /> byte 1-2 <br /> (char)    | Description |
+Message Structure:
+| Message Type <br /> byte 1-2 <br /> (char)         | Description |
 | --------------------------------------------- | ----------- |
 |1                                              | Set motor X direction |
 |2                                              | Print sensor X value Y |
