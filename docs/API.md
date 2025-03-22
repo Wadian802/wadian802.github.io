@@ -5,9 +5,9 @@ THe interfacing between these components means that each part can speak to anoth
 Provided is a sample of messages the stepper motor will send or receive between other sensors. 
 
 Message Structure
-| Message Type <br /> byte 1-2 <br /> (char)            | Description |
+| Message Type <br /> byte 1-2 <br /> (char)    | Description |
 | --------------------------------------------- | ----------- |
-|1                                              | Set motor X in Y in direction |
+|1                                              | Set motor X direction |
 |2                                              | Print sensor X value Y |
 |3                                              | Subsystem X id|
 |4                                              | Motor Status, X |
@@ -16,7 +16,7 @@ Message Structure
 
 
 Message Type 1:
-| | Byte 5-6 | Byte 7 | Byte 8 |
+|----------- | Byte 5-6 | Byte 7 | Byte 8 |
 |------------| --------------| ------------- | ------------- |
 | Variable Name | message_type | motor_id | motor_direction |
 |Variable Type | char | char | int8_t |
@@ -26,7 +26,7 @@ Message Type 1:
 
 
 Message Type 2:
-| | Byte 5-6 | Byte 7 | Byte 8 |
+|----------- | Byte 5-6 | Byte 7 | Byte 8 |
 |------------| --------------| ------------- | ------------- |
 | Variable Name | message_type | sensor_id | sensor_value |
 |Variable Type | char | char | char |
@@ -36,7 +36,7 @@ Message Type 2:
 
 
 Message Type 3:
-| | Byte 5 - Byte 6 | Byte 7 |
+|------------| Byte 5 - Byte 6 | Byte 7 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | subsystem_id |
 |Variable Type | char | char |
@@ -46,7 +46,7 @@ Message Type 3:
 
 
 Message Type 4:
-|  | Byte 5 - Byte 6 | Byte 7 |
+|----------  | Byte 5 - Byte 6 | Byte 7 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | motor_status |
 |Variable Type | char | uint8_t |
@@ -56,11 +56,11 @@ Message Type 4:
 
 
 Message Type 5:
-| | Byte 5 - Byte 6 | Byte 7 |
+|------------| Byte 5 - Byte 6 | Byte 7 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | motor_speed |
 |Variable Type | char | uint8_t |
 | Min Value | 1 | -100 |
-| Max Value| 8 | +100 |
+| Max Value| 8 | 100 |
 | Example | 2 | 56|
 
