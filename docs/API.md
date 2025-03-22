@@ -1,4 +1,4 @@
-# Application Programming Interface or API # 
+# Application Programming Interface or API  
 The software between the motor, hall effect sensor, wifi and OLED screen all need to communicate to perform a function and communicate that function to a user. 
 THe interfacing between these components means that each part can speak to another part. 
 
