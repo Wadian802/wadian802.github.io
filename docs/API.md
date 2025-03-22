@@ -43,7 +43,7 @@ Message Type 3:
 | Variable Name | message_type | subsystem_id |
 |Variable Type | char | char |
 | Min Value | 1 | a |
-| Max Value| 8 | d |
+| Max Value| 7 | d |
 | Example | 5 | c |
 
 
@@ -53,7 +53,7 @@ Message Type 4:
 | Variable Name | message_type | motor_status |
 |Variable Type | char | uint8_t |
 | Min Value | 1 | 0 |
-| Max Value| 8 | 1 |
+| Max Value| 7 | 1 |
 | Example | 4 | 0 |
 
 
@@ -63,6 +63,6 @@ Message Type 5:
 | Variable Name | message_type | motor_speed |
 |Variable Type | char | uint8_t |
 | Min Value | 1 | -100 |
-| Max Value| 8 | 100 |
+| Max Value| 7 | 100 |
 | Example | 2 | 56|
 
