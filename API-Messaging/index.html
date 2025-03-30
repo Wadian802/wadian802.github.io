@@ -12,7 +12,7 @@
       
       
       
-        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/API/">
+        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/API-Messaging/">
       
       
         <link rel="prev" href="..">
@@ -29,7 +29,7 @@
 
     
       
-        <title>API - EGR314 Report Template</title>
+        <title>API Messaging - EGR314 Report Template</title>
       
     
     
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API
+              API Messaging
             
           </span>
         </div>
@@ -226,7 +226,7 @@
   
     
   
-  API
+  API Messaging
 
       </a>
     </li>
@@ -441,7 +441,7 @@
           
   
   <span class="md-ellipsis">
-    API
+    API Messaging
   </span>
   
 
@@ -452,7 +452,7 @@
         
   
   <span class="md-ellipsis">
-    API
+    API Messaging
   </span>
   
 
@@ -689,7 +689,7 @@
                   
 
   
-    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/API.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/API-Messaging.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -697,7 +697,7 @@
   
 
 
-  <h1>API</h1>
+  <h1>API Messaging</h1>
 
 <hr />
 <h2 id="application-programming-interface-or-api-messaging">Application Programming Interface or API  Messaging</h2>
@@ -735,14 +735,66 @@ The interfacing between these components means that each part can speak to anoth
 </tr>
 </tbody>
 </table>
+<p>Team ID:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Alex</th>
+<th>Frank</th>
+<th>Luis</th>
+<th>Tyler</th>
+<th>Broadcasting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Letter</td>
+<td>a</td>
+<td>b</td>
+<td>d</td>
+<td>c</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<p>Structure of the Message</p>
+<table>
+<thead>
+<tr>
+<th>Bytes</th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+<th>Byte 3</th>
+<th>Byte 4</th>
+<th>Byte 5</th>
+<th>Byte 6</th>
+<th>Byte 7</th>
+<th>Byte 8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contents</td>
+<td>'A'</td>
+<td>'Z'</td>
+<td>Sender Letter</td>
+<td>Receiver Letter</td>
+<td>Message Letter</td>
+<td>Message contents</td>
+<td>'Y'</td>
+<td>'B'</td>
+</tr>
+</tbody>
+</table>
 <p>Message Type 1:  </p>
 <table>
 <thead>
 <tr>
 <th>-----------</th>
-<th>Byte 5-6</th>
+<th>Byte 5</th>
+<th>Byte 6</th>
 <th>Byte 7</th>
-<th>Byte 8</th>
 </tr>
 </thead>
 <tbody>
@@ -762,19 +814,19 @@ The interfacing between these components means that each part can speak to anoth
 <td>Min Value</td>
 <td>1</td>
 <td>1</td>
-<td>-1</td>
+<td>0</td>
 </tr>
 <tr>
 <td>Max Value</td>
-<td>8</td>
-<td>3</td>
 <td>1</td>
+<td>3</td>
+<td>2</td>
 </tr>
 <tr>
 <td>Example</td>
 <td>1</td>
 <td>2</td>
-<td>-1</td>
+<td>2</td>
 </tr>
 </tbody>
 </table>
@@ -783,9 +835,9 @@ The interfacing between these components means that each part can speak to anoth
 <thead>
 <tr>
 <th>-----------</th>
-<th>Byte 5-6</th>
+<th>Byte 5</th>
+<th>Byte 6</th>
 <th>Byte 7</th>
-<th>Byte 8</th>
 </tr>
 </thead>
 <tbody>
@@ -809,15 +861,15 @@ The interfacing between these components means that each part can speak to anoth
 </tr>
 <tr>
 <td>Max Value</td>
-<td>8</td>
+<td>2</td>
 <td>2</td>
 <td>100</td>
 </tr>
 <tr>
 <td>Example</td>
-<td>3</td>
 <td>2</td>
-<td>23</td>
+<td>2</td>
+<td>25</td>
 </tr>
 </tbody>
 </table>
@@ -826,8 +878,8 @@ The interfacing between these components means that each part can speak to anoth
 <thead>
 <tr>
 <th>------------</th>
-<th>Byte 5 - Byte 6</th>
-<th>Byte 7</th>
+<th>Byte 5</th>
+<th>Byte 6</th>
 </tr>
 </thead>
 <tbody>
@@ -843,12 +895,12 @@ The interfacing between these components means that each part can speak to anoth
 </tr>
 <tr>
 <td>Min Value</td>
-<td>1</td>
+<td>5</td>
 <td>a</td>
 </tr>
 <tr>
 <td>Max Value</td>
-<td>7</td>
+<td>5</td>
 <td>d</td>
 </tr>
 <tr>
@@ -863,8 +915,8 @@ The interfacing between these components means that each part can speak to anoth
 <thead>
 <tr>
 <th>----------</th>
-<th>Byte 5 - Byte 6</th>
-<th>Byte 7</th>
+<th>Byte 5</th>
+<th>Byte 6</th>
 </tr>
 </thead>
 <tbody>
@@ -880,18 +932,18 @@ The interfacing between these components means that each part can speak to anoth
 </tr>
 <tr>
 <td>Min Value</td>
-<td>1</td>
+<td>6</td>
 <td>0</td>
 </tr>
 <tr>
 <td>Max Value</td>
-<td>7</td>
+<td>6</td>
 <td>1</td>
 </tr>
 <tr>
 <td>Example</td>
-<td>4</td>
-<td>0</td>
+<td>6</td>
+<td>1</td>
 </tr>
 </tbody>
 </table>
@@ -900,8 +952,8 @@ The interfacing between these components means that each part can speak to anoth
 <thead>
 <tr>
 <th>------------</th>
-<th>Byte 5 - Byte 6</th>
-<th>Byte 7</th>
+<th>Byte 5</th>
+<th>Byte  6</th>
 </tr>
 </thead>
 <tbody>
@@ -929,6 +981,43 @@ The interfacing between these components means that each part can speak to anoth
 <td>Example</td>
 <td>2</td>
 <td>56</td>
+</tr>
+</tbody>
+</table>
+<p>Message Broadcast :</p>
+<table>
+<thead>
+<tr>
+<th>----</th>
+<th>Byte 5</th>
+<th>Byte 6 - Byte 55</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>message_type</td>
+<td>broadcast_message</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>int8_t</td>
+<td>string</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>8</td>
+<td>Minimum value is 1 character</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>8</td>
+<td>Max value is 48 characters</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>8</td>
+<td>This is broadcast</td>
 </tr>
 </tbody>
 </table>
