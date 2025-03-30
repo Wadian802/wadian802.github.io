@@ -17,58 +17,82 @@ Message Structure:
 |5                                              | Set motor speed |
 
 
+Team ID:
+
+| Name   | Alex | Frank | Luis | Tyler | Broadcasting|
+|--------|------|-------|------|-------|------------|
+| Letter | a    | b     | d    | c     | X|
+
+
+Structure of the Message
+
+|Bytes	|Byte 1	|  Byte 2	|  Byte 3	| Byte 4	|Byte 5| 	Byte 6 |	Byte 7 |	Byte 8|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|Contents|	'A'	|'Z'|	Sender Letter |Receiver Letter|	Message Letter |Message contents	|'Y'	|'B'| 
+
 
 Message Type 1:  
 
-|-----------    | Byte 5-6      | Byte 7        |   Byte 8 |
+|-----------    | Byte 5      | Byte 6       |   Byte 7 |
 |------------   | --------------| ------------- | ------------- |
 | Variable Name | message_type  | motor_id      | motor_direction |
 |Variable Type  | char          | char          | int8_t |
-| Min Value     | 1             | 1             | -1 |
-| Max Value     | 8             | 3             | 1 |
-| Example       | 1             | 2             | -1 |
+| Min Value     | 1             | 1             | 0 |
+| Max Value     | 1             |  3            | 2 |
+| Example       | 1             | 2             | 2 |
 
 
 Message Type 2:  
 
-|-----------    | Byte 5-6     | Byte 7        | Byte 8 |
+|-----------    | Byte 5    | Byte 6       | Byte 7   |
 |------------   | -------------| ------------- | ------------- |
 | Variable Name | message_type | sensor_id     | sensor_value |
 | Variable Type | char         | char          | char |
 | Min Value     | 1            | 1             | 0 |
-| Max Value     | 8            | 2             |  100 |
-| Example       | 3            | 2             | 23 |
+| Max Value     | 2            | 2             |  100 |
+| Example       | 2            | 2            | 25 |
 
 
 Message Type 3:  
 
-|------------| Byte 5 - Byte 6 | Byte 7 |
+|------------| Byte 5  | Byte 6 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | subsystem_id |
 |Variable Type | char | char |
-| Min Value | 1 | a |
-| Max Value| 7 | d |
+| Min Value | 5 | a |
+| Max Value| 5 | d |
 | Example | 5 | c |
 
 
 Message Type 4:  
 
-|----------  | Byte 5 - Byte 6 | Byte 7 |
+|----------  | Byte 5  | Byte 6 |
 |------------| --------------| ------------- |
 | Variable Name | message_type | motor_status |
 |Variable Type | char | uint8_t |
-| Min Value | 1 | 0 |
-| Max Value| 7 | 1 |
-| Example | 4 | 0 |
+| Min Value | 6 | 0 |
+| Max Value| 6 | 1 |
+| Example | 6 | 1 |
 
 
 Message Type 5:  
 
-|------------| Byte 5 - Byte 6 | Byte 7 |
+|------------| Byte 5 | Byte  6|
 |------------| --------------| ------------- |
 | Variable Name | message_type | motor_speed |
 |Variable Type | char | uint8_t |
 | Min Value | 1 | -100 |
 | Max Value| 7 | 100 |
 | Example | 2 | 56|
+
+
+Message Broadcast :
+
+|----|Byte 5|	Byte 6 - Byte 55|
+|-----|-------|-------|
+|Variable Name | 	message_type	| broadcast_message|
+|Variable Type	|int8_t	|string|
+|Min Value|	8	|Minimum value is 1 character|
+|Max Value	|8	|Max value is 48 characters|
+|Example	|8	|This is broadcast |
 
