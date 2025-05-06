@@ -22,7 +22,7 @@ Selection of parts
 | ![LM2575D2T-3.3G](./LM2575D2T.png)  | <ul><li> Very familiar with usage </li><li> will step down the voltage from 9V to 3.3V </li><li>   | <ul><li>  surface mounted  |   [LM2575T](https://www.digikey.com/en/products/detail/onsemi/LM2575T-3-3G/1476700). | 
 
 # Selected Components
-##  Nema 17Step Motor
+##  Nema 17 Bidirectional Stepper Motor
 This bipolar step motor will be able to oporate at 5V and provide adequate amount of torque to move a gate. It has a small step angle of 1.8 degrees allowing for greater adjustments. From mounting hole to mounting hole, its only 31millimeters with an overall diamerter of 42.3 millimeters. It is small yet functional and adequate for the project needs. 
 
 ##  IFX9201SGAUMA1 Motor driver
