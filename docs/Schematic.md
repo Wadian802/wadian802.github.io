@@ -10,3 +10,6 @@ This is the schematic for components to run the stepper motor and control the ga
 *  [Schematic Folder](./StepMotor-Driver1-2.zip)
 
 ![PCB](./PCBfinal.png) 
+
+![PCB Front](./Front.jpg)
+![PCB Back](./Back.jpg) 
