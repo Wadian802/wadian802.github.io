@@ -12,13 +12,13 @@
       
       
       
-        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/charts/">
+        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/Verson2/">
       
       
-        <link rel="prev" href="../Verson2/">
+        <link rel="prev" href="../Schematic/">
       
       
-        <link rel="next" href="../subfolder/">
+        <link rel="next" href="../charts/">
       
       
       <link rel="icon" href="../static/logo.png">
@@ -29,7 +29,7 @@
 
     
       
-        <title>Charts - EGR314 Report Template</title>
+        <title>Verson2 - EGR314 Report Template</title>
       
     
     
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Charts
+              Verson2
             
           </span>
         </div>
@@ -314,9 +314,11 @@
         
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../Verson2/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
     
@@ -331,11 +333,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../charts/" class="md-tabs__link">
         
   
     
@@ -554,25 +554,6 @@
       
   
   
-  
-    <li class="md-nav__item">
-      <a href="../Verson2/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Verson2
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -586,12 +567,31 @@
         
   
   <span class="md-ellipsis">
-    Charts
+    Verson2
   </span>
   
 
       </a>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../charts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Charts
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -670,7 +670,7 @@
                   
 
   
-    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/charts.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/Verson2.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -678,35 +678,12 @@
   
 
 
-  <h1>Charts</h1>
+  <h1>Verson2</h1>
 
-<pre class="mermaid"><code>graph LR
-  A[Start] --&gt; B{Error?};
-  B --&gt;|Yes| C[Hmm...];
-  C --&gt; D[Debug];
-  D --&gt; B;
-  B ----&gt;|No| E[Yay!];</code></pre>
-<pre class="mermaid"><code>sequenceDiagram
-  autonumber
-  Alice-&gt;&gt;John: Hello John, how are you?
-  loop Healthcheck
-      John-&gt;&gt;John: Fight against hypochondria
-  end
-  Note right of John: Rational thoughts!
-  John--&gt;&gt;Alice: Great!
-  John-&gt;&gt;Bob: How about you?
-  Bob--&gt;&gt;John: Jolly good!</code></pre>
-<pre class="mermaid"><code>stateDiagram-v2
-  state fork_state &lt;&lt;fork&gt;&gt;
-    [*] --&gt; fork_state
-    fork_state --&gt; State2
-    fork_state --&gt; State3
-
-    state join_state &lt;&lt;join&gt;&gt;
-    State2 --&gt; join_state
-    State3 --&gt; join_state
-    join_state --&gt; State4
-    State4 --&gt; [*]</code></pre>
+<p>The team found that my motor code would bog down the system. Data would come in, but my system would not know what to do with it and sent nothing out. The system was busy trying to work as programed but failed to do so causing issues with group communication. The only way it would work was to comment on the motor code. I would fix this by adding some type of sensor that identified movement and code to proceed if movement is found or exit if no movement is found. This would be looking for an action to take place and then alert if no action took place.  </p>
+<p>Because of the problems I had with limited pins to work with, I would add more GPIO pins to the board giving me access to all pins that could be used if the pin being used had a problem. I would also add a female receiver to each of my subsystem pin so I could hard wire easier in the event it was needed. 
+I did not have any lights to debug the system, just pins to measure voltage outputs. My system would be easier to read if I put in debugging lights that flashed as different processes were taking place. I would write into the program to toggle certain LEDS if different pins were sending or receiving a signal. </p>
+<p>Lastly, I would clean up the board by changing the design of different traces, section out where different connections could go, and remove all the switches that never got used. </p>
 
 
 
@@ -734,7 +711,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../Verson2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Verson2" rel="prev">
+          <a href="../Schematic/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Schematic" rel="prev">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -744,20 +721,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Verson2
+                Schematic
               </div>
             </div>
           </a>
         
         
           
-          <a href="../subfolder/" class="md-footer__link md-footer__link--next" aria-label="Next: This is the index to a subfolder" rel="next">
+          <a href="../charts/" class="md-footer__link md-footer__link--next" aria-label="Next: Charts" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                This is the index to a subfolder
+                Charts
               </div>
             </div>
             <div class="md-footer__button md-icon">
