@@ -950,12 +950,6 @@
 <td>Data Sheet</td>
 </tr>
 <tr>
-<td>---------------------------------------------</td>
-<td>------</td>
-<td>------------------------------------------------------------------------</td>
-<td>-------</td>
-</tr>
-<tr>
 <td><a class="glightbox" href="../PIC18f47Q10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PIC18F47Q10" src="../PIC18f47Q10.png" /></a></td>
 <td><ul><li> Familiar with chip, used in class </li><li> Many GPIO pins for addtional components </li><li></td>
 <td><ul><li> Not as compact as similar chips </li></td>
@@ -1031,6 +1025,7 @@
 <p>Power is requried to run major components for the stepper driver and motor. One would need to know how much power is being used and how much still available.  The power budget focuses on both the supply voltage range and the maximum amont of current each component would take. This, with then given a 25% safety margin, allows for little more room to determine the most amount of amperage being drawn by the device. From this, one can determine how much is needed and how much can sent to others through the the communication chain. </p>
 <p><a class="glightbox" href="../PBF1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Power Budget" src="../PBF1.png" /></a>
 <a class="glightbox" href="../PBF2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Power Budget" src="../PBF2.png" /></a></p>
+<p>The power budget was advantagious to determine if an active part would work within the system. The biggets concern would be too much of a draw of power causing something to short out or burn out. My first PCB did not work properly causing must of the surface mounted components to heat up rapidly. My fourth PCB burned out a trace wire because there was no where for the voltage to go. Drawing more amperage would have caused componets to burn. The power budget helped prevent that. </p>
 <p><a href="../PowerBudgetComplete.pdf">Power Budget</a></p>
 
 
