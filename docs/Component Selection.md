@@ -55,6 +55,6 @@ Power is requried to run major components for the stepper driver and motor. One 
 ![Power Budget](./PBF1.png)
 ![Power Budget](./PBF2.png)
 
-The power budget was advantagious to determine if an active part would work within the system. The biggets concern would be too much of a draw of power causing something to short out or burn out. My first PCB did not work properly causing must of the surface mounted components to heat up rapidly. My fourth PCB burned out a trace wire because there was no where for the voltage to go. Drawing more amperage would have caused componets to burn. The power budget helped prevent that. 
+The power budget was advantagious to determine if an active part would work within the system. One could determine if a specific combination of active parts would exceed the budget which would potentioal cause harm to the user. My own power budget showed me that using the chosen stepper motor would have put my system and of my teamates in jeopardy because I was over by 250mA. That was with a 25% buffet. If I would have focuson on both amperage and voltage, I might have chosen a different motor. 
 
 [Power Budget](./PowerBudgetComplete.pdf)
