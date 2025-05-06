@@ -30,5 +30,5 @@ PIC18F47Q10 Chip Informatoin
 | ICSP       | 2          | 0      | 39 & 40                              |
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-> ![PICPackage](./PICPackage.png) 
->  ![MCCPins](./MCCPins.png) 
+> ![PICPackage](./FinalChip.png) 
+>  ![MCCPins](./MCCFinalPins.png) 
