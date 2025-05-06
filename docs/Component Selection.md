@@ -14,11 +14,10 @@ Selection of parts
 | ![324](./stepmoto2.jpg)       | <ul><li>1.8 degree step angle </li><li>v24mm Shaft</li><li>2 wire to operate | <ul><li> .22kg mass </li><li>42.2mm size  | [324](https://cdn-shop.adafruit.com/product-files/324/C140-A+datasheet.jpg).| 
 | ![MIKROE-1530](./stepmoto3.jpg)  | <ul><li>Operates at 5V </li><li>  5.625 degree step </li><li>   | <ul><li> Needs to use 3 wires to work </li><li> 10mm shaft </li><li> Might need a clip to work  |   [MIKROE-1530](https://download.mikroe.com/documents/datasheets/step-motor-5v-28byj48-datasheet.pdf). | 
 | ![Nema 17](./FinalDriver.png)  | <ul><li>Operates at 5V </li><li> 1.8 degree step </li><li>   | <ul><li> Needs to use 4 wires to work </li><li> 20mm shaft </li><li> Might need a clip to work  |   [Nema 17](https://www.omc-stepperonline.com/index.php?route=product/product/get_file&file=92/17HS08-1004S%20Full%20Datasheet.pdf). |
-|Microcontorller Part                                      | Pros| Cons  |  Data Sheet    |                                                                                           
-| --------------------------------------------- | ------ | ------------------------------------------------------------------------|-------|
+|Microcontorller Part                                      | Pros| Cons  |  Data Sheet    |                                                                         | --------------------------------------------- | ------ | ------------------------------------------------------------------------|-------|
 | ![PIC18F47Q10](./PIC18f47Q10.png)  | <ul><li> Familiar with chip, used in class </li><li> Many GPIO pins for addtional components </li><li>   | <ul><li> Not as compact as similar chips </li> |   [PIC18F47Q10](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf). | 
 
-|Voltage Regulator  Part                                      | Pros| Cons  |  Data Sheet    |                                                                                           
+|Voltage Regulator  Part                                      | Pros| Cons  |  Data Sheet    |                                                                      
 | --------------------------------------------- | ------ | ------------------------------------------------------------------------ |-------|
 | ![LM2575D2T-3.3G](./LM2575D2T.png)  | <ul><li> Very familiar with usage </li><li> will step down the voltage from 9V to 3.3V </li><li>   | <ul><li>  surface mounted  |   [LM2575T](https://www.digikey.com/en/products/detail/onsemi/LM2575T-3-3G/1476700). | 
 
@@ -55,5 +54,7 @@ Power is requried to run major components for the stepper driver and motor. One 
 
 ![Power Budget](./PBF1.png)
 ![Power Budget](./PBF2.png)
+
+The power budget was advantagious to determine if an active part would work within the system. The biggets concern would be too much of a draw of power causing something to short out or burn out. My first PCB did not work properly causing must of the surface mounted components to heat up rapidly. My fourth PCB burned out a trace wire because there was no where for the voltage to go. Drawing more amperage would have caused componets to burn. The power budget helped prevent that. 
 
 [Power Budget](./PowerBudgetComplete.pdf)
