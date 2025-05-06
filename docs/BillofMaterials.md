@@ -5,4 +5,4 @@ These are the materials needed to create the motor portion of the hydroelectric 
 
 ![Bill of Materials](./BillofMaterialsFinal.png)
 
-*[Bill of Materials](./BillofMaterialsFinal.xlsx)
+*[Bill of Materials](./BilloMaterialsFinal.xlsx)
