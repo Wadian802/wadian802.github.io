@@ -13,3 +13,8 @@ This is the schematic for components to run the stepper motor and control the ga
 
 ![PCB Front](./Front.jpg)
 ![PCB Back](./Back.jpg) 
+
+![PCBArt1](./ArtTop.png)
+![PCBArt2](./ArtBottom.png)
+![PCBArt3](./SoldermaskTop.png)
+![PCBArt4](./Soldermaskbottom.png)
