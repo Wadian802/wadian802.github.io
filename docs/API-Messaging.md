@@ -10,11 +10,8 @@ Message Structure:
 
 | Message Type <br /> byte 1-2 <br /> (char)         | Description |
 | --------------------------------------------- | ----------- |
-|1                                              | Set motor X direction |
-|2                                              | Print sensor X value Y |
-|3                                              | Subsystem X id|
-|4                                              | Motor Status, X |
-|5                                              | Set motor speed |
+|1                                              | Set motor X Position |
+
 
 
 Team ID:
@@ -41,49 +38,6 @@ Message Type 1:
 | Max Value     | 1             |  3            | 2 |
 | Example       | 1             | 2             | 2 |
 
-
-Message Type 2:  
-
-|-----------    | Byte 5    | Byte 6       | Byte 7   |
-|------------   | -------------| ------------- | ------------- |
-| Variable Name | message_type | sensor_id     | sensor_value |
-| Variable Type | char         | char          | char |
-| Min Value     | 1            | 1             | 0 |
-| Max Value     | 2            | 2             |  100 |
-| Example       | 2            | 2            | 25 |
-
-
-Message Type 3:  
-
-|------------| Byte 5  | Byte 6 |
-|------------| --------------| ------------- |
-| Variable Name | message_type | subsystem_id |
-|Variable Type | char | char |
-| Min Value | 5 | a |
-| Max Value| 5 | d |
-| Example | 5 | c |
-
-
-Message Type 4:  
-
-|----------  | Byte 5  | Byte 6 |
-|------------| --------------| ------------- |
-| Variable Name | message_type | motor_status |
-|Variable Type | char | uint8_t |
-| Min Value | 6 | 0 |
-| Max Value| 6 | 1 |
-| Example | 6 | 1 |
-
-
-Message Type 5:  
-
-|------------| Byte 5 | Byte  6|
-|------------| --------------| ------------- |
-| Variable Name | message_type | motor_speed |
-|Variable Type | char | uint8_t |
-| Min Value | 1 | -100 |
-| Max Value| 7 | 100 |
-| Example | 2 | 56|
 
 
 Message Broadcast :
