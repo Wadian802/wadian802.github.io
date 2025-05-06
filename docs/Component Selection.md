@@ -43,8 +43,11 @@ This voltage regular is a surface mounted regulater that will step down a 9V com
 | Nema 17 | Stepper Motor |
 | Schottky Diode | Diode  |
 |LM275D2T| Voltage Regulator |
-The hese parts were selected specifically because they all fit the parameters of the project and most of them were familiar to the design team. All major components except the Nema17 were surface mounted parts that fit the overall requirement of the project. 
 
+
+These parts were selected specifically because they all fit the parameters of the project and most of them were familiar to the design team. All major components except the Nema17 were surface mounted parts. This allow for the product to be geared towards an industry look. 
+
+------
 ### Power Budget ###
 ------
 Power is requried to run major components for the stepper driver and motor. One would need to know how much power is being used and how much still available.  The power budget focuses on both the supply voltage range and the maximum amont of current each component would take. This, with then given a 25% safety margin, allows for little more room to determine the most amount of amperage being drawn by the device. From this, one can determine how much is needed and how much can sent to others through the the communication chain. 
