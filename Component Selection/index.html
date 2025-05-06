@@ -561,8 +561,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#26m048b1b-step-motor" class="md-nav__link">
-    26M048B1B Step Motor
+  <a href="#nema-17step-motor" class="md-nav__link">
+    Nema 17Step Motor
   </a>
   
 </li>
@@ -773,8 +773,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#26m048b1b-step-motor" class="md-nav__link">
-    26M048B1B Step Motor
+  <a href="#nema-17step-motor" class="md-nav__link">
+    Nema 17Step Motor
   </a>
   
 </li>
@@ -901,12 +901,32 @@
 <td><ul><li> Needs to use 3 wires to work </li><li> 10mm shaft </li><li> Might need a clip to work</td>
 <td><a href="https://download.mikroe.com/documents/datasheets/step-motor-5v-28byj48-datasheet.pdf">MIKROE-1530</a>.</td>
 </tr>
+<tr>
+<td><a class="glightbox" href="../FinalDriver.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Nema 17" src="../FinalDriver.png" /></a></td>
+<td><ul><li>Operates at 5V </li><li> 1.8 degree step </li><li></td>
+<td><ul><li> Needs to use 4 wires to work </li><li> 20mm shaft </li><li> Might need a clip to work</td>
+<td><a href="https://www.omc-stepperonline.com/index.php?route=product/product/get_file&amp;file=92/17HS08-1004S%20Full%20Datasheet.pdf">Nema 17</a>.</td>
+</tr>
+<tr>
+<td>Microcontorller Part</td>
+<td>Pros</td>
+<td>Cons</td>
+<td>Data Sheet</td>
+</tr>
+<tr>
+<td>---------------------------------------------</td>
+<td>------</td>
+<td>------------------------------------------------------------------------</td>
+<td>-------</td>
+</tr>
+<tr>
+<td><a class="glightbox" href="../PIC18f47Q10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PIC18F47Q10" src="../PIC18f47Q10.png" /></a></td>
+<td><ul><li> Familiar with chip, used in class </li><li> Many GPIO pins for addtional components </li><li></td>
+<td><ul><li> Not as compact as similar chips </li></td>
+<td><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10</a>.</td>
+</tr>
 </tbody>
 </table>
-<p>| <a class="glightbox" href="./PLACEHERE" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Nema 17" src="./PLACEHERE" /></a>  | <ul><li>Operates at 5V </li><li> 1.8 degree step </li><li>   | <ul><li> Needs to use 4 wires to work </li><li> 20mm shaft </li><li> Might need a clip to work  |   <a href="https://www.omc-stepperonline.com/index.php?route=product/product/get_file&amp;file=92/17HS08-1004S%20Full%20Datasheet.pdf">Nema 17</a>. |
-|Microcontorller Part                                      | Pros| Cons  |  Data Sheet    |                                                                                         <br />
-| --------------------------------------------- | ------ | ------------------------------------------------------------------------|-------|
-| <a class="glightbox" href="../PIC18f47Q10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PIC18F47Q10" src="../PIC18f47Q10.png" /></a>  | <ul><li> Familiar with chip, used in class </li><li> Many GPIO pins for addtional components </li><li>   | <ul><li> Not as compact as similar chips </li> |   <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">PIC18F47Q10</a>. | </p>
 <table>
 <thead>
 <tr>
@@ -926,20 +946,58 @@
 </tbody>
 </table>
 <h1 id="selected-components">Selected Components</h1>
-<h2 id="26m048b1b-step-motor">26M048B1B Step Motor</h2>
-<p>This bipolar step motor will be able to oporate at 5V and provide adequate amount of torque to move a gate. It has a small step angle of 7.5 degrees allowing for greater adjustments. From mounting hole to mounting hole, its only 1.374 inches with an overall diamerter of 1.030 inches. It is small yet functional and adequate for the project needs. </p>
+<h2 id="nema-17step-motor">Nema 17Step Motor</h2>
+<p>This bipolar step motor will be able to oporate at 5V and provide adequate amount of torque to move a gate. It has a small step angle of 1.8 degrees allowing for greater adjustments. From mounting hole to mounting hole, its only 31millimeters with an overall diamerter of 42.3 millimeters. It is small yet functional and adequate for the project needs. </p>
 <h2 id="ifx9201sgauma1-motor-driver">IFX9201SGAUMA1 Motor driver</h2>
 <p>This full half bridge will interface in SPI and it will work with the selected chip. This chip model will output at 3.3 volts working with the step motor. Because the step motor is bipolar, it will need two drivers. One driver will control the motion of the step motor in one direction, the other chip will control the motion of the step motor in the other direction. </p>
 <h2 id="pic18f47q10-microcontroller">PIC18F47Q10 Microcontroller</h2>
 <p>The Microchip microcontrol is part of the PIC18 family. This particular chip hosts 40 pins, 2 being VDD and VSS, 1 for MCLR and for GPIO. It possesses the ability to work either SPI or I2C for connecting with different peripherals. As the microcontroller used in class, the familiarity of it makes it ideal the project. </p>
 <h2 id="lm275d2t-voltage-regulator">LM275D2T Voltage regulator</h2>
 <p>This voltage regular is a surface mounted regulater that will step down a 9V coming to an easier 3.3V. This particular part has been utilized before so the familiarity with its use, also makes it a great choice to use for this particular project. </p>
+<table>
+<thead>
+<tr>
+<th>Major Component Selection   Part</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PIC18F47Q10-E/PT</td>
+<td>Micro Controler</td>
+</tr>
+<tr>
+<td>LED</td>
+<td>Green LED</td>
+</tr>
+<tr>
+<td>IC Half Bridge Driver</td>
+<td>Motor Driver</td>
+</tr>
+<tr>
+<td>Nema 17</td>
+<td>Stepper Motor</td>
+</tr>
+<tr>
+<td>Schottky Diode</td>
+<td>Diode</td>
+</tr>
+<tr>
+<td>LM275D2T</td>
+<td>Voltage Regulator</td>
+</tr>
+<tr>
+<td>The hese parts were selected specifically because they all fit the parameters of the project and most of them were familiar to the design team. All major components except the Nema17 were surface mounted parts that fit the overall requirement of the project.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h3 id="power-budget">Power Budget</h3>
 <hr />
 <p>Power is requried to run major components for the stepper driver and motor. One would need to know how much power is being used and how much still available.  The power budget focuses on both the supply voltage range and the maximum amont of current each component would take. This, with then given a 25% safety margin, allows for little more room to determine the most amount of amperage being drawn by the device. From this, one can determine how much is needed and how much can sent to others through the the communication chain. </p>
 <p><a class="glightbox" href="../PB1.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Power Budget" src="../PB1.jpg" /></a>
-<a class="glightbox" href="../PB2.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Power Budget" src="../PB2.jpg" /></a></p>
-<p><a href="../PowerBudget.pdf">Power Budget</a></p>
+<a class="glightbox" href="../PB2.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Power Budget" src="../PB2.jpg" /></a>
+<a href="../PowerBudget.pdf">Power Budget</a></p>
 
 
 
